@@ -6,7 +6,7 @@ Archive hors-ligne des challenges de **https://ctf.deadface.io** générée avec
 
 ## Consulter
 
-- **En ligne** : via GitHub Pages (lien dans la colonne « About » du dépôt, une fois Pages activé)
+- **En ligne** : https://gbcodeur.github.io/myctf2026/
 - **En local** : `git clone` du dépôt, puis ouvrir `index.html` dans un navigateur.
 
 ## Contenu
