@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive CTF</title>
+    <link rel="stylesheet" href="assets/style_0.css">
+    <link rel="stylesheet" href="assets/style_2.css">
+    <link rel="stylesheet" href="assets/style_3.css">
+    <link rel="stylesheet" href="assets/style_4.css">
+
+    <style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6; color: #333; margin: 0 auto; padding: 20px; background: #f5f5f5;
+}
+.container { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+h1 { color: #333; margin-bottom: 20px; }
+.meta { display: flex; gap: 15px; margin-bottom: 20px; flex-wrap: wrap; }
+.meta-item { background: #e9ecef; padding: 8px 16px; border-radius: 4px; font-size: 0.9em; }
+code { background: #f1f3f4; padding: 2px 6px; border-radius: 3px; font-family: 'Courier New', monospace; }
+
+body { max-width: 1400px; }
+.category { margin-bottom: 40px; }
+.category h2 { color: #007bff; border-bottom: 2px solid #007bff; padding-bottom: 10px; margin-bottom: 20px; }
+.challenge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+.challenge-card { background: #f8f9fa; padding: 20px; border-radius: 8px; border: 2px solid transparent; transition: all 0.3s; }
+.challenge-card:hover { border-color: #007bff; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+.challenge-card a { text-decoration: none; color: inherit; }
+.challenge-card h3 { color: #007bff; margin-bottom: 10px; }
+.points { color: #28a745; font-weight: 600; }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏆 Archive CTF</h1>
+
+        <div class="meta">
+            <div class="meta-item"><strong>Date:</strong> 2026-10-20 07:51:16</div>
+            <div class="meta-item"><strong>Source:</strong> https://ctf.deadface.io</div>
+            <div class="meta-item"><strong>Total:</strong> 96 challenges</div>
+        </div>
+
+        <div class="category">
+            <h2>📂 Aurora Patient Zero (4)</h2>
+            <div class="challenge-grid">
+                <div class="challenge-card">
+                    <a href="Aurora%20Patient%20Zero/Back%20to%20Basics/index.html">
+                        <h3>Back to Basics</h3>
+                        <p class="points">15 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Aurora%20Patient%20Zero/Down%20the%20Rabbit%20Hole/index.html">
+                        <h3>Down the Rabbit Hole</h3>
+                        <p class="points">10 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Aurora%20Patient%20Zero/Info%20Leaks/index.html">
+                        <h3>Info Leaks</h3>
+                        <p class="points">25 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Aurora%20Patient%20Zero/SQL%20Skillz/index.html">
+                        <h3>SQL Skillz</h3>
+                        <p class="points">50 points</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>📂 Bonus (1)</h2>
+            <div class="challenge-grid">
+                <div class="challenge-card">
+                    <a href="Bonus/DOOM/index.html">
+                        <h3>DOOM</h3>
+                        <p class="points">25 points</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>📂 Brain Scans (7)</h2>
+            <div class="challenge-grid">
+                <div class="challenge-card">
+                    <a href="Brain%20Scans/Bad%20Calibration/index.html">
+                        <h3>Bad Calibration</h3>
+                        <p class="points">210 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Brain%20Scans/Bedside%20Manner/index.html">
+                        <h3>Bedside Manner</h3>
+                        <p class="points">15 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Brain%20Scans/Dump%20It/index.html">
+                        <h3>Dump It</h3>
+                        <p class="points">150 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Brain%20Scans/Factory%20Settings/index.html">
+                        <h3>Factory Settings</h3>
+                        <p class="points">25 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Brain%20Scans/Live%20Boot/index.html">
+                        <h3>Live Boot</h3>
+                        <p class="points">50 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Brain%20Scans/Second%20Opinion/index.html">
+                        <h3>Second Opinion</h3>
+                        <p class="points">50 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Brain%20Scans/Signals%20from%20the%20Skull/index.html">
+                        <h3>Signals from the Skull</h3>
+                        <p class="points">300 points</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>📂 Cryptography (7)</h2>
+            <div class="challenge-grid">
+                <div class="challenge-card">
+                    <a href="Cryptography/Chess%20Key/index.html">
+                        <h3>Chess Key</h3>
+                        <p class="points">200 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Cryptography/DECODE-DLE/index.html">
+                        <h3>DECODE-DLE</h3>
+                        <p class="points">25 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Cryptography/Digital%20Design/index.html">
+                        <h3>Digital Design</h3>
+                        <p class="points">100 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Cryptography/Hail%20Caesar/index.html">
+                        <h3>Hail Caesar</h3>
+                        <p class="points">5 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Cryptography/Infrequent%20Emojis/index.html">
+                        <h3>Infrequent Emojis</h3>
+                        <p class="points">50 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Cryptography/Second%20Shift/index.html">
+                        <h3>Second Shift</h3>
+                        <p class="points">90 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Cryptography/X%20Marks%20the%20Spot/index.html">
+                        <h3>X Marks the Spot</h3>
+                        <p class="points">30 points</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>📂 Database (11)</h2>
+            <div class="challenge-grid">
+                <div class="challenge-card">
+                    <a href="Database/Admitted%20Under%20Another%20Name/index.html">
+                        <h3>Admitted Under Another Name</h3>
+                        <p class="points">15 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Database/After%20the%20Lock/index.html">
+                        <h3>After the Lock</h3>
+                        <p class="points">150 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Database/Ghost%20in%20the%20Registry/index.html">
+                        <h3>Ghost in the Registry</h3>
+                        <p class="points">240 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Database/Heavy%20Hand/index.html">
+                        <h3>Heavy Hand</h3>
+                        <p class="points">100 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Database/Prying%20Eyes/index.html">
+                        <h3>Prying Eyes</h3>
+                        <p class="points">55 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Database/Schedule%20of%20Concern/index.html">
+                        <h3>Schedule of Concern</h3>
+                        <p class="points">20 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Database/The%20Attending/index.html">
+                        <h3>The Attending</h3>
+                        <p class="points">40 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Database/The%20Original%20Reading/index.html">
+                        <h3>The Original Reading</h3>
+                        <p class="points">70 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Database/Too%20Good%20to%20be%20True/index.html">
+                        <h3>Too Good to be True</h3>
+                        <p class="points">310 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Database/Two%20Places%20at%20Once/index.html">
+                        <h3>Two Places at Once</h3>
+                        <p class="points">450 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Database/Upon%20the%20Throne/index.html">
+                        <h3>Upon the Throne</h3>
+                        <p class="points">120 points</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>📂 De Monne Breach (12)</h2>
+            <div class="challenge-grid">
+                <div class="challenge-card">
+                    <a href="De%20Monne%20Breach/Borrowed%20Script/index.html">
+                        <h3>Borrowed Script</h3>
+                        <p class="points">100 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="De%20Monne%20Breach/Cache%20Money/index.html">
+                        <h3>Cache Money</h3>
+                        <p class="points">150 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="De%20Monne%20Breach/Challenge%20Accepted/index.html">
+                        <h3>Challenge Accepted</h3>
+                        <p class="points">100 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="De%20Monne%20Breach/Crown%20Jewels/index.html">
+                        <h3>Crown Jewels</h3>
+                        <p class="points">75 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="De%20Monne%20Breach/False%20Telemetry/index.html">
+                        <h3>False Telemetry</h3>
+                        <p class="points">250 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="De%20Monne%20Breach/Hidden%20in%20Plain%20Task/index.html">
+                        <h3>Hidden in Plain Task</h3>
+                        <p class="points">75 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="De%20Monne%20Breach/Name%20to%20a%20Face/index.html">
+                        <h3>Name to a Face</h3>
+                        <p class="points">10 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="De%20Monne%20Breach/Public%20Offering/index.html">
+                        <h3>Public Offering</h3>
+                        <p class="points">75 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="De%20Monne%20Breach/The%20Typo%20That%20Bit/index.html">
+                        <h3>The Typo That Bit</h3>
+                        <p class="points">75 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="De%20Monne%20Breach/The%20Workstation%20in%20the%20Middle/index.html">
+                        <h3>The Workstation in the Middle</h3>
+                        <p class="points">40 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="De%20Monne%20Breach/Uninvited%20Guest/index.html">
+                        <h3>Uninvited Guest</h3>
+                        <p class="points">25 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="De%20Monne%20Breach/Who%20Goes%20There_/index.html">
+                        <h3>Who Goes There?</h3>
+                        <p class="points">25 points</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>📂 De Monne Slayer (4)</h2>
+            <div class="challenge-grid">
+                <div class="challenge-card">
+                    <a href="De%20Monne%20Slayer/Diagnosis/index.html">
+                        <h3>Diagnosis</h3>
+                        <p class="points">100 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="De%20Monne%20Slayer/Hard%20Kept%20Secrets/index.html">
+                        <h3>Hard Kept Secrets</h3>
+                        <p class="points">20 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="De%20Monne%20Slayer/Inside%20Man/index.html">
+                        <h3>Inside Man</h3>
+                        <p class="points">20 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="De%20Monne%20Slayer/No%20Holding%20Back/index.html">
+                        <h3>No Holding Back</h3>
+                        <p class="points">210 points</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>📂 Forensics (2)</h2>
+            <div class="challenge-grid">
+                <div class="challenge-card">
+                    <a href="Forensics/Art%20Heist_%20The%20Forgery/index.html">
+                        <h3>Art Heist: The Forgery</h3>
+                        <p class="points">25 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Forensics/Hooked/index.html">
+                        <h3>Hooked</h3>
+                        <p class="points">25 points</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>📂 Hostbusters (8)</h2>
+            <div class="challenge-grid">
+                <div class="challenge-card">
+                    <a href="Hostbusters/Dangerous%20Capability/index.html">
+                        <h3>Dangerous Capability</h3>
+                        <p class="points">300 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Hostbusters/Foothold%20on%20Charon/index.html">
+                        <h3>Foothold on Charon</h3>
+                        <p class="points">10 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Hostbusters/Git%20Good/index.html">
+                        <h3>Git Good</h3>
+                        <p class="points">100 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Hostbusters/Heavy%20is%20the%20Crown/index.html">
+                        <h3>Heavy is the Crown</h3>
+                        <p class="points">500 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Hostbusters/Lilith/index.html">
+                        <h3>Lilith</h3>
+                        <p class="points">250 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Hostbusters/Looking%20Back/index.html">
+                        <h3>Looking Back</h3>
+                        <p class="points">30 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Hostbusters/Old%20Habits/index.html">
+                        <h3>Old Habits</h3>
+                        <p class="points">350 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Hostbusters/On%20Schedule/index.html">
+                        <h3>On Schedule</h3>
+                        <p class="points">200 points</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>📂 Miscellaneous (2)</h2>
+            <div class="challenge-grid">
+                <div class="challenge-card">
+                    <a href="Miscellaneous/AI%20Rule/index.html">
+                        <h3>AI Rule</h3>
+                        <p class="points">0 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Miscellaneous/Starter/index.html">
+                        <h3>Starter</h3>
+                        <p class="points">1 points</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>📂 Mobile (2)</h2>
+            <div class="challenge-grid">
+                <div class="challenge-card">
+                    <a href="Mobile/Keypad%20Oracle/index.html">
+                        <h3>Keypad Oracle</h3>
+                        <p class="points">200 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Mobile/Locked...%20or%20Not_/index.html">
+                        <h3>Locked... or Not?</h3>
+                        <p class="points">150 points</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>📂 OSINT (7)</h2>
+            <div class="challenge-grid">
+                <div class="challenge-card">
+                    <a href="OSINT/Alice%20and%20Bob%20Would%20Like%20a%20Word/index.html">
+                        <h3>Alice and Bob Would Like a Word</h3>
+                        <p class="points">75 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="OSINT/Car%20Crash/index.html">
+                        <h3>Car Crash</h3>
+                        <p class="points">50 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="OSINT/Death/index.html">
+                        <h3>Death</h3>
+                        <p class="points">100 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="OSINT/File%20Dump%2002/index.html">
+                        <h3>File Dump 02</h3>
+                        <p class="points">75 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="OSINT/Ghost%20of%20Squares%20Past/index.html">
+                        <h3>Ghost of Squares Past</h3>
+                        <p class="points">150 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="OSINT/The%20Vibes%20Are%20Freaking%20Me%20Out/index.html">
+                        <h3>The Vibes Are Freaking Me Out</h3>
+                        <p class="points">75 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="OSINT/You%20Wouldn%27t%20Git%20It/index.html">
+                        <h3>You Wouldn&#x27;t Git It</h3>
+                        <p class="points">125 points</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>📂 PWN (5)</h2>
+            <div class="challenge-grid">
+                <div class="challenge-card">
+                    <a href="PWN/Cursed%20Library/index.html">
+                        <h3>Cursed Library</h3>
+                        <p class="points">235 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="PWN/Cursed%20Mirror/index.html">
+                        <h3>Cursed Mirror</h3>
+                        <p class="points">150 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="PWN/Necromancy/index.html">
+                        <h3>Necromancy</h3>
+                        <p class="points">300 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="PWN/Skeleton%20Key/index.html">
+                        <h3>Skeleton Key</h3>
+                        <p class="points">125 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="PWN/The%20Crypt/index.html">
+                        <h3>The Crypt</h3>
+                        <p class="points">100 points</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>📂 Reverse Engineering (5)</h2>
+            <div class="challenge-grid">
+                <div class="challenge-card">
+                    <a href="Reverse%20Engineering/Cereal%20Killer%2001/index.html">
+                        <h3>Cereal Killer 01</h3>
+                        <p class="points">50 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Reverse%20Engineering/Cereal%20Killer%2002/index.html">
+                        <h3>Cereal Killer 02</h3>
+                        <p class="points">150 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Reverse%20Engineering/Cereal%20Killer%2003/index.html">
+                        <h3>Cereal Killer 03</h3>
+                        <p class="points">500 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Reverse%20Engineering/Cereal%20Killer%2004/index.html">
+                        <h3>Cereal Killer 04</h3>
+                        <p class="points">250 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Reverse%20Engineering/It%20But%20A%20Wee%20Bit%20Reverse/index.html">
+                        <h3>It But A Wee Bit Reverse</h3>
+                        <p class="points">15 points</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>📂 Steganography (7)</h2>
+            <div class="challenge-grid">
+                <div class="challenge-card">
+                    <a href="Steganography/Conduct%20Unbecoming/index.html">
+                        <h3>Conduct Unbecoming</h3>
+                        <p class="points">75 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Steganography/Exfiltration/index.html">
+                        <h3>Exfiltration</h3>
+                        <p class="points">75 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Steganography/File%20Dump%2001/index.html">
+                        <h3>File Dump 01</h3>
+                        <p class="points">10 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Steganography/File%20Dump%2003/index.html">
+                        <h3>File Dump 03</h3>
+                        <p class="points">200 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Steganography/Headshot/index.html">
+                        <h3>Headshot</h3>
+                        <p class="points">10 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Steganography/Hidden%20Loot%20Box/index.html">
+                        <h3>Hidden Loot Box</h3>
+                        <p class="points">15 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Steganography/Keep%20Digging/index.html">
+                        <h3>Keep Digging</h3>
+                        <p class="points">100 points</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>📂 The Long Road (2)</h2>
+            <div class="challenge-grid">
+                <div class="challenge-card">
+                    <a href="The%20Long%20Road/Get%20That%20Bag/index.html">
+                        <h3>Get That Bag</h3>
+                        <p class="points">350 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="The%20Long%20Road/The%20Mark/index.html">
+                        <h3>The Mark</h3>
+                        <p class="points">350 points</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>📂 Traffic Analysis (6)</h2>
+            <div class="challenge-grid">
+                <div class="challenge-card">
+                    <a href="Traffic%20Analysis/A%20Pirate%27s%20Life%20for%20Me_%20Part%201/index.html">
+                        <h3>A Pirate&#x27;s Life for Me: Part 1</h3>
+                        <p class="points">25 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Traffic%20Analysis/Bad%20Guys%20Be%20Bad/index.html">
+                        <h3>Bad Guys Be Bad</h3>
+                        <p class="points">350 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Traffic%20Analysis/Data%20Go%20Brrrrr/index.html">
+                        <h3>Data Go Brrrrr</h3>
+                        <p class="points">25 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Traffic%20Analysis/Don%27t%20Leave%20Me%20Hanging/index.html">
+                        <h3>Don&#x27;t Leave Me Hanging</h3>
+                        <p class="points">500 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Traffic%20Analysis/Return%20to%20Sender/index.html">
+                        <h3>Return to Sender</h3>
+                        <p class="points">80 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Traffic%20Analysis/Twilight%20Zone%20Transfer/index.html">
+                        <h3>Twilight Zone Transfer</h3>
+                        <p class="points">50 points</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>📂 Web (4)</h2>
+            <div class="challenge-grid">
+                <div class="challenge-card">
+                    <a href="Web/Do%20People%20Still%20Fax%20in%202026_%20%20%283%20of%204%20series%29/index.html">
+                        <h3>Do People Still Fax in 2026?  (3 of 4 series)</h3>
+                        <p class="points">100 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Web/I%20Want%20to%20be%20a%20Real%20Boy%20%20%284%20of%204%20series%29/index.html">
+                        <h3>I Want to be a Real Boy  (4 of 4 series)</h3>
+                        <p class="points">250 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Web/Speak%20Friend%20and%20Enter/index.html">
+                        <h3>Speak Friend and Enter</h3>
+                        <p class="points">200 points</p>
+                    </a>
+                </div>
+                <div class="challenge-card">
+                    <a href="Web/Spook-A-Thon/index.html">
+                        <h3>Spook-A-Thon</h3>
+                        <p class="points">80 points</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

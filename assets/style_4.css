@@ -1,0 +1,75 @@
+/* Countdown Timer Styling */
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* Space between segments */
+    margin-top: 1rem; /* Space below the button */
+    margin-bottom: 1rem;
+    flex-wrap: wrap; /* Allow segments to wrap on smaller screens */
+}
+
+.countdown-segment {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--neon-cyan);
+    box-shadow: 0 0 8px var(--neon-cyan);
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 90px; /* Ensure segments have some width */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.countdown-segment:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 12px var(--neon-cyan), 0 0 5px var(--neon-cyan) inset;
+}
+
+.countdown-number {
+    display: block;
+    font-size: 2rem; /* Large numbers */
+    font-weight: bold;
+    color: var(--neon-yellow);
+    text-shadow: 0 0 5px var(--neon-yellow);
+    line-height: 1.1;
+}
+
+.countdown-label {
+    display: block;
+    font-size: 0.6rem;
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 0.3rem;
+}
+/* Responsive design (adjust card size if needed, flip works) */
+@media (max-width: 768px) {
+    .countdown-number {
+        font-size: 2rem;
+    }
+    .countdown-segment {
+        padding: 0.8rem 1rem;
+        min-width: 80px;
+    }
+    .countdown {
+        gap: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title { font-size: 2rem; }
+    .countdown {
+        gap: 0.5rem;
+        flex-direction: row; /* Ensure they stay in a row as much as possible */
+        /* Or stack them by changing to column and adjusting segment width to 100% */
+    }
+    .countdown-segment {
+        padding: 0.6rem 0.8rem;
+        min-width: 65px; /* Smaller segments */
+    }
+    .countdown-number {
+        font-size: 1.6rem;
+    }
+    .countdown-label {
+        font-size: 0.75rem;
+    }
+}

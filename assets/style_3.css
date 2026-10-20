@@ -1,0 +1,180 @@
+/* Custom Styles for Index Page Layout */
+
+/* Body/HTML background for overall theme */
+html, body {
+    background: #0d0d0d; /* Even darker base background */
+    background-image: linear-gradient(rgba(0, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px; /* Grid background for techy feel */
+}
+
+/* Vertical and horizontal centering for the main content block */
+.full-height-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    padding: 20px; /* Add some padding around the content */
+}
+
+/* Main content card with cyberpunk styling */
+.cyberpunk-main-card {
+    /* background-color: rgba(18, 18, 18, 0.9); /* Slightly transparent dark background */
+    border: 2px solid var(--white); /* White border */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 0 25px var(--primary), 0 0 50px var(--primary) inset; /* Intense neon glow */
+    padding: 40px;
+    margin-top: 20px; /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
+    max-width: 900px; /* Max width for content area */
+    width: 100%;
+    backdrop-filter: blur(1px); /* Subtle blur effect */
+    -webkit-backdrop-filter: blur(5px);
+    animation: pulse-border 2s infinite alternate; /* Pulsing border animation */
+}
+
+/* Content area within the card */
+.cyberpunk-content-area {
+    padding: 20px;
+}
+
+/* DEADFACE Logo styling */
+.deadface-logo {
+    max-width: 30rem; /* Adjust max-width for the logo */
+    padding: 0 !important; /* Remove original padding */
+    padding-bottom: 30px !important; /* Add space below logo */
+    filter: drop-shadow(0 0 15px var(--pink)); /* Neon glow for logo */
+    transition: filter 0.3s ease-in-out;
+}
+
+.deadface-logo:hover {
+    filter: drop-shadow(0 0 25px var(--pink));
+}
+
+/* Main title styling */
+.deadface-title {
+    font-size: 3.5rem; /* Larger title */
+    color: var(--primary); /* Neon primary color */
+    text-shadow: 0 0 15px var(--primary); /* Stronger glow */
+    margin-bottom: 10px;
+    letter-spacing: 5px; /* More spaced out */
+}
+
+/* Tagline styling */
+.deadface-tagline {
+    font-family: var(--font-family-monospace); /* Monospace font for tagline */
+    font-size: 1.5rem;
+    color: var(--green); /* Green neon text */
+    text-shadow: 0 0 8px var(--green);
+    margin-bottom: 30px;
+}
+
+/* Social links section */
+.social-links .lead {
+    font-family: var(--font-family-sans-serif);
+    color: var(--white);
+    text-shadow: 0 0 5px rgba(255,255,255,0.2);
+    margin-bottom: 20px;
+}
+
+.btn-social {
+    border-width: 2px; /* Thicker border for social buttons */
+    padding: 10px 15px; /* Adjust padding */
+    font-size: 1.2rem; /* Larger icons */
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-social:hover {
+    transform: translateY(-5px) scale(1.05); /* Lift and slightly enlarge on hover */
+    box-shadow: 0 0 20px var(--primary);
+}
+
+/* Admin login section */
+.admin-login .lead {
+    font-family: var(--font-family-sans-serif);
+    color: var(--white);
+    text-shadow: 0 0 5px rgba(255,255,255,0.2);
+    margin-bottom: 20px;
+}
+
+.cyberpunk-glow-button {
+    background-color: var(--dark);
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px var(--primary);
+    box-shadow: 0 0 15px var(--primary);
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.cyberpunk-glow-button:hover {
+    color: var(--dark);
+    background-color: var(--primary);
+    text-shadow: none;
+    box-shadow: 0 0 30px var(--primary), 0 0 60px var(--primary); /* More intense glow */
+    transform: scale(1.02);
+}
+
+.cyberpunk-glow-button .button-text {
+    position: relative;
+    z-index: 2;
+}
+
+/* Keyframe Animations */
+@keyframes pulse-border {
+    0% {
+        box-shadow: 0 0 25px var(--primary), 0 0 50px var(--primary) inset;
+    }
+    50% {
+        box-shadow: 0 0 35px var(--info), 0 0 70px var(--info) inset; /* Change color for pulse */
+    }
+    100% {
+        box-shadow: 0 0 25px var(--primary), 0 0 50px var(--primary) inset;
+    }
+}
+
+/* Overriding original Bootstrap/CTFd styles for complete theme consistency */
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-6.offset-md-3 {
+    /* Remove this specific centering if .full-height-center is used */
+    /* If keeping, ensure it doesn't conflict */
+}
+
+/* General Link Overrides for the index page */
+.cyberpunk-content-area a {
+    text-decoration: none;
+}
+
+.cyberpunk-content-area a:hover {
+    text-decoration: underline;
+}
+
+/* Ensure Font Awesome Icons within buttons also inherit styles */
+.btn-social i, .cyberpunk-glow-button i {
+    color: inherit;
+    text-shadow: inherit;
+}
+
+.container {
+    max-width: 90%;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    /* DEADFACE Logo styling */
+    .deadface-logo {
+        max-width: 100%; /* Adjust max-width for the logo */
+        padding: 0 !important; /* Remove original padding */
+        padding-bottom: 30px !important; /* Add space below logo */
+        filter: drop-shadow(0 0 15px var(--pink)); /* Neon glow for logo */
+        transition: filter 0.3s ease-in-out;
+    }
+}
